@@ -2,10 +2,10 @@
 
 /**
  * main - Entry point
- * 
  * Description:
- * i@parameter:
- * 
+ * @argc: argument count
+ * @argv: argument velocity
+ *
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])

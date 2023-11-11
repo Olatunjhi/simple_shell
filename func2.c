@@ -1,5 +1,9 @@
 #include "shell.h"
 
+/**
+ * exeCommand - To execute command input
+ * @command: function parameter
+ */
 void exeCommand(char *command)
 {
 	char *parsing[60];
@@ -37,6 +41,7 @@ void exeCommand(char *command)
 		else
 		{
 			int status;
+
 			wait(&status);
 		}
 	}
