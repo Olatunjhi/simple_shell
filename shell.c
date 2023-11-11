@@ -1,4 +1,5 @@
 #include "shell.h"
+
 int main(int argc, char *argv[])
 {
     if (argc != 2)
@@ -6,8 +7,10 @@ int main(int argc, char *argv[])
         printUserMessage(argv[0]);
         return 1;
     }
+
     char command[120];
     char *prompt = "($)";
+
     while (1)
     {
 	    print(prompt);
