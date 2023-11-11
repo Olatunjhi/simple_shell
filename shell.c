@@ -10,13 +10,16 @@
  */
 int main(int argc, char *argv[])
 {
+	char command[120];
+	char *prompt;
+
 	if (argc != 2)
 	{
 		printUserMessage(argv[0]);
 		return (1);
 	}
-	char command[120];
-	char *prompt = "($)";
+
+	prompt = "($)";
 
 	while (1)
 	{

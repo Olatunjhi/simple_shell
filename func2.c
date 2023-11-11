@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  * exeCommand - To execute command input
  * @command: function parameter
@@ -8,6 +7,8 @@ void exeCommand(char *command)
 {
 	char *parsing[60];
 	int i = 0;
+	pid_t pid;
+
 	char *token = strtok(command, " \n");
 
 	if (token != NULL)
@@ -24,7 +25,7 @@ void exeCommand(char *command)
 			exit(0);
 		}
 
-		pid_t pid = fork();
+		pid = fork();
 
 		if (pid < 0)
 		{
