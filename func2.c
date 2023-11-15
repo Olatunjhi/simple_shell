@@ -8,6 +8,7 @@ void exeCommand(char *command)
 	char *parsing[60];
 	int i = 0;
 	pid_t pid;
+	int status;
 
 	char *token = strtok(command, " \n");
 
@@ -41,8 +42,6 @@ void exeCommand(char *command)
 		}
 		else
 		{
-			int status;
-
 			wait(&status);
 		}
 	}
